@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Louisa's data story</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <script defer type="text/javascript" src="appscripts/main.js">
+        </script>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="C:\Users\louis\Desktop\NM2207\web\finalProject\resources\logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>   <!--This button will redirect the user to the top of the page while scrolling-->
+                <li><a href="#">Background</a></li> <!--This button will redirect the user to the background information while scrolling-->
+                <li><a href="#">Countries</a></li> <!--This button will redirect the user to the different countries pages while scrolling, I want to make this a drop-down menue-->
+                <li><a href="#">Conclusion</a></li> <!--This button will redirect the user to the conclusion while scrolling-->
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>World Happiness Report</h1>
+            <p>What is the trend of happiness scores in 5 Nordic countries in Europe over the last decade?<br>I WILL UPDATE THIS QUESTION </p>
+            <div>
+                <button type="button"><span></span>READ MORE</button>   <!--If you press this button you get directed to "Background"-->
+                <button type="button"><span></span>SOURCES</button>     <!--If you press this button you get directed to the bottom of the page where I will write the sources I used etc.-->
+            </div>
+        </div>
+        <!--Design and code: followed this youtube tutorial: https://www.youtube.com/watch?v=PgAZ8KzfhO8-->
+        
+    </div>
+    
+    <div id="background-info">
+        <p>Here I will write some background text on the happiness report and my webpage.<br>
+           I will also try to answear questions like: Why does the nordic countries of europe score so high in the happiness report? etc
+        </p>
+    </div>
+
+    <div>
+        <img src="C:\Users\louis\Desktop\NM2207\web\finalProject\resources\map.png" class="map">
+    </div>
+
+    <div class="range">
+        <div class="slidervalue">
+            <span>100</span>
+        </div>
+        <div class="field">
+            <div class="value-left">2012</div>
+            <input type="range" min="2012" max="2021" value="10" steps="1">  <!--Some sort of range slider button to show the different years on the map-->
+            <div class="value-right">2021</div>
+        </div>
+    </div>
+
+    <div id="background-info-1">
+        <p>Here I will write some background text on the happiness of sweden and the different factors of happiness from the happiness report of 2022<br>
+            You will get to this section of my webpage either by scrolling down or clicking the country sweden <br>
+            in the dropdown menue at the nav bar under countries
+        </p>
+    </div>
+
+    <div id="canvas-container-sweden">
+        <canvas id="happiness-chart-swe" width="400" height="400"></canvas>
+    </div>
+
+    <div>
+        <button type="button"><span></span>HAPPINESS SCORE SWEDEN</button> <!--If you click this button you get the happines score line chart for sweden-->
+    </div>
+
+    <div id="canvas-container-sweden-1">
+        <canvas id="happiness-score-sweden" width="400" height="400"></canvas>
+    </div>
+
+    <!--I will repeat the steps for sweden with the following countries: Norway, Denmark, finland and Iceland-->
+
+    <div id="canvas-container-norway">
+        <canvas id="factors-norway" width="400" height="400"></canvas>
+    </div>
+
+    <div id="canvas-container-norway-1">
+        <canvas id="score-norway" width="400" height="400"></canvas>
+    </div>
+
+    <div id="canvas-container-denmark">
+        <canvas id="factors-denmark" width="400" height="400"></canvas>
+    </div>
+
+    <div id="canvas-container-denmark-1">
+        <canvas id="score-denmark" width="400" height="400"></canvas>
+    </div>
+
+    <div id="canvas-container-finland">
+        <canvas id="factors-finland" width="400" height="400"></canvas>
+    </div>
+
+    <div id="canvas-container-finland-1">
+        <canvas id="score-finland" width="400" height="400"></canvas>
+    </div>
+
+    <div id="canvas-container-iceland">
+        <canvas id="factors-iceland" width="400" height="400"></canvas>
+    </div>
+
+    <div id="canvas-container-iceland-1">
+        <canvas id="score-iceland" width="400" height="400"></canvas>
+    </div>
+
+    <div class="conclusion">
+        <p>Here I will write a little conclusion and some charts that compare the countries</p>
+    </div>
+
+</body>
+
+<footer>
+    <div class="sources">
+        <p> Here i will add my sources, you will get here by scrolling or clicking the resources-button at the landing page</p>
+    </div>
+</footer>
+
