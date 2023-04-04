@@ -87,6 +87,7 @@
                     }
             }
     });
+
     
     //CHARTS FOR NORWAY
     const dataObj2 = {

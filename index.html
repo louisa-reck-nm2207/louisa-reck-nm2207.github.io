@@ -12,10 +12,21 @@
         <div class="navbar">
             <img src="C:\Users\louis\Desktop\NM2207\web\finalProject\resources\logo.png" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>   <!--This button will redirect the user to the top of the page while scrolling-->
-                <li><a href="#">Background</a></li> <!--This button will redirect the user to the background information while scrolling-->
-                <li><a href="#">Countries</a></li> <!--This button will redirect the user to the different countries pages while scrolling, I want to make this a drop-down menue-->
-                <li><a href="#">Conclusion</a></li> <!--This button will redirect the user to the conclusion while scrolling-->
+                <!-- <li><a href="#">Home</a></li> This button will redirect the user to the top of the page while scrolling-->
+                <li><a href="#background-info">Background</a></li> <!--This button will redirect the user to the background information while scrolling-->
+                 <!-- <li><a href="#">Countries</a></li> This button will redirect the user to the different countries pages while scrolling, I want to make this a drop-down menue-->
+                <li class="dropdown">
+                      <a>Countries</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#canvas-container-sweden">Sweden</a></li>
+                        <li><a href="#canvas-container-norway">Norway</a></li>
+                        <li><a href="#canvas-container-denmark">Denmark</a></li>
+                        <li><a href="#canvas-container-finland">Finland</a></li>
+                        <li><a href="#canvas-container-iceland">Iceland</a></li>
+                      </ul>
+                </li>
+                <li><a href="#conclusion">Conclusion</a></li> <!--This button will redirect the user to the conclusion while scrolling-->
+                <li><a href="#footer">About</a></li> <!--This button will redirect the user to the project documentation-->
             </ul>
         </div>
 
@@ -23,8 +34,8 @@
             <h1>World Happiness Report</h1>
             <p>What is the trend of happiness scores in 5 Nordic countries in Europe over the last decade?<br>I WILL UPDATE THIS QUESTION </p>
             <div>
-                <button type="button"><span></span>READ MORE</button>   <!--If you press this button you get directed to "Background"-->
-                <button type="button"><span></span>SOURCES</button>     <!--If you press this button you get directed to the bottom of the page where I will write the sources I used etc.-->
+                <button type="button"><a href="#background-info"><span></span>READ MORE</a></button>   <!--If you press this button you get directed to "Background"-->
+                <button type="button"><a href="#footer"><span></span>SOURCES</a></button>     <!--If you press this button you get directed to the bottom of the page where I will write the sources I used etc.-->
             </div>
         </div>
         <!--Design and code: followed this youtube tutorial: https://www.youtube.com/watch?v=PgAZ8KzfhO8-->
@@ -63,12 +74,13 @@
         <canvas id="happiness-chart-swe" width="400" height="400"></canvas>
     </div>
 
-    <div>
-        <button type="button"><span></span>HAPPINESS SCORE SWEDEN</button> <!--If you click this button you get the happines score line chart for sweden-->
-    </div>
 
     <div id="canvas-container-sweden-1">
         <canvas id="happiness-score-sweden" width="400" height="400"></canvas>
+    </div>
+
+    <div>
+        <button type="button" id="toggleButtonSwe"><span></span>SCORE/FACTORS</button> <!--If you click this button you get the happines score line chart for sweden-->
     </div>
 
     <!--I will repeat the steps for sweden with the following countries: Norway, Denmark, finland and Iceland-->
@@ -105,15 +117,33 @@
         <canvas id="score-iceland" width="400" height="400"></canvas>
     </div>
 
-    <div class="conclusion">
+    <div class="conclusion" id="conclusion">
         <p>Here I will write a little conclusion and some charts that compare the countries</p>
     </div>
 
-</body>
+    <div class="footer" id="footer">
+        <div class="col-1">
+            <h3>SOURCES</h3>
+            <a href="https://worldhappiness.report/ed/2022/">World Happiness Report 2022</a>
+            <a href="https://www.gapminder.org/data/">Gapminder</a>
+            <a href="https://chat.openai.com/">ChatGPT</a>
+        </div>
 
-<footer>
-    <div class="sources">
-        <p> Here i will add my sources, you will get here by scrolling or clicking the resources-button at the landing page</p>
+        <div class="col-2">
+            <h3>ABOUT</h3>
+            <a href="#">Project Report</a>
+            <a href="#">Diary entries</a>
+            <a href="#">Storyboard</a>
+        </div>
+            
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p> Louisa Reck </p><br>
+            <p>National University of Singapore</p><br>
+            <p>NM2207 - Computational Media Literacy</p><br>
+            <a href="https://github.com/louisa-reck-nm2207/louisa-reck-nm2207.github.io">Github repository</a>
+        </div>
     </div>
-</footer>
 
+</body>
+</html>

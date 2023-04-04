@@ -47,6 +47,47 @@
 .navbar ul li:hover::after{
     width: 100%;
 }
+
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+  
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(253, 134, 0, 0.20);
+    border-radius: 10px;
+    padding: 30px;
+    z-index: 9999;
+}
+
+.dropdown-menu li {
+    padding: 7px;
+}
+
+.navbar .dropdown-menu li::after {
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #FDB51B;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition:0.5s;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+  
+
+
 .content{
     width: 100%;
     position: absolute;
@@ -63,6 +104,12 @@
     margin:20px auto;
     font-weight: 100;
     line-height: 25px;
+}
+
+.content a{
+    display: block;
+    text-decoration: none;
+    color:#fff;
 }
 button{
     width: 200px;
@@ -119,12 +166,7 @@ button:hover{
     width:50%;
     background-color: #FDB51B;
 }
-.sources{
-    position: relative;
-    height: 100%;
-    width:100%;
-    background-color: #FDB51B;
-}
+
 
 #canvas-container-sweden{
     position: relative;
@@ -223,4 +265,49 @@ button:hover{
     border-radius: 5px;
     outline: none;
     border: none;
+}
+
+/* Footer*/
+.footer{
+    margin-top: 100px;
+    width: 70%;
+    padding: 100px 15%;
+    background: #333;
+    color:#fff;
+    display:flex;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.col-2{
+    flex-grow: 2;
+}
+
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    margin-bottom: 10px;
+}
+
+.col-2 a{
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    margin-bottom: 10px;
+}
+
+.col-3 a{
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    margin-bottom: 10px;
 }
