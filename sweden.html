@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Louisa's data story</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <script defer type="text/javascript" src="appscripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/ab17712221.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bannerSwe">
+        <div class="navbar">
+            <img src="C:\Users\louis\Desktop\NM2207\web\finalProject\resources\logo.png" class="logo">
+            <ul>
+                <!-- <li><a href="#">Home</a></li> This button will redirect the user to the top of the page while scrolling-->
+                <li><a href="index.html">home</a></li> <!--This button will redirect the user to the background information while scrolling-->
+                 <!-- <li><a href="#">Countries</a></li> This button will redirect the user to the different countries pages while scrolling, I want to make this a drop-down menue-->
+                <li class="dropdown">
+                      <a>Countries</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="sweden.html">Sweden</a></li>
+                        <li><a href="#canvas-container-norway">Norway</a></li>
+                        <li><a href="#canvas-container-denmark">Denmark</a></li>
+                        <li><a href="#canvas-container-finland">Finland</a></li>
+                        <li><a href="#canvas-container-iceland">Iceland</a></li>
+                      </ul>
+                </li>
+                <li><a href="#conclusion">Conclusion</a></li> <!--This button will redirect the user to the conclusion while scrolling-->
+                <li><a href="#footer">About</a></li> <!--This button will redirect the user to the project documentation-->
+            </ul>
+        </div>
+
+        <div class="contentSwe">
+            <h1>SWEDEN</h1><br>
+            <div class="icons">
+                <i class="fas fa-user" style="color: #fff;"></i> 10.6 Million inhabitants    
+                <i class="fas fa-map-marker-alt" style="color: #fff;"></i> Stockholm 
+                <i class="fas fa-star" style="color: #fff;"></i> 6:th place in WHR 2022
+            </div>
+
+
+        </div>
+        <!--Design and code: followed this youtube tutorial: https://www.youtube.com/watch?v=PgAZ8KzfhO8-->
+        
+    </div>
+ 
+    <section class="sweden">
+        <div class="row">
+            <div class="sweden-col">
+                <h1>World Happiness Report 2022</h1><br>
+                <p> According to the World Happiness Report 2022, Sweden ranked sixth in the world in terms of happiness with a score of 74 out of 100. Nevertheless, the country received a relatively low score for the generosity factor compared to other countries. This does not necessarily mean that Swedes are not generous, but rather that the generosity measure used in the report is based on charitable donations and volunteering, which may not reflect the full extent of generosity in Swedish society.<br>
+
+                    Sweden has a well-developed welfare state and a high level of taxation, which means that many social needs are already met by the government. As a result, there may be less of a cultural tradition of private charitable donations compared to other countries with weaker social safety nets.<br>
+                    
+                    Furthermore, the COVID-19 pandemic may have had an impact on the generosity score for Sweden and other countries. With social distancing measures in place, there may have been fewer opportunities for volunteering and charitable donations. Additionally, the economic impact of the pandemic may have made it more difficult for people to donate money.<br>
+                    
+                    It's also worth noting that while Sweden may have received a lower score for generosity, it received high scores in other factors that contribute to overall happiness, such as social support, work-life balance, and a sense of purpose.
+                   
+                </p>
+            </div>
+            <div class="sweden-col-chart">
+                <canvas id="happiness-chart-swe" width="400" height="400"></canvas>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="sweden">
+        <div class="row">
+            <div class="sweden-col">
+                <h1>Sweden: A Happy Country</h1><br>
+                <p>If we look at the World Happiness Scores of Sweden between the years 2012 and 2021, we can see that Sweden's happiness score has been consistently high throughout this period. In 2012, Sweden's happiness score was 75.6 which is the highest score during this decade. The score has ranged between 72.4 and 75.6. This indicates that Sweden has been successful in maintaining a high level of happiness and well-being among its citizens, despite the challenges posed by events such as the COVID-19 pandemic.<br>
+
+                    Sweden's high ranking can be attributed to several factors. The country has a strong social welfare system, which provides its citizens with access to high-quality healthcare, education, and other public services. Sweden also values work-life balance, with a focus on shorter work weeks, parental leave, and flexible working arrangements.<br>
+                    
+                    Additionally, Sweden has a high level of trust in society, both between individuals and in institutions. This trust is fostered by low levels of corruption and a commitment to social cohesion. Sweden is also known for its emphasis on sustainability, innovation, and design, which contribute to a sense of well-being among its citizens..</p>
+            </div>
+            <div class="sweden-col-chart">
+                <canvas id="happiness-score-sweden" width="400" height="400"></canvas>
+            </div>
+
+        </div>
+    </section>
+    <div class="footer" id="footer">
+        <div class="col-1">
+            <h3>SOURCES</h3>
+            <a href="https://worldhappiness.report/ed/2022/">World Happiness Report 2022</a>
+            <a href="https://www.gapminder.org/data/">Gapminder</a>
+            <a href="https://chat.openai.com/">ChatGPT</a>
+        </div>
+
+        <div class="col-2">
+            <h3>ABOUT</h3>
+            <a href="#">Project Report</a>
+            <a href="diary.html">Diary entries</a>
+            <a href="#">Storyboard</a>
+        </div>
+            
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p> Louisa Reck </p><br>
+            <p>National University of Singapore</p><br>
+            <p>NM2207 - Computational Media Literacy</p><br>
+            <a href="https://github.com/louisa-reck-nm2207/louisa-reck-nm2207.github.io">Github repository</a>
+        </div>
+    </div>
+
+</body>
+</html>

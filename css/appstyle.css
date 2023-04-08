@@ -11,6 +11,7 @@
     background-size: cover;
     background-position: center;
 }
+
 .navbar{
     width: 85%;
     margin: auto;
@@ -154,30 +155,10 @@ button:hover{
     width:50%;
     background-color: #FDB51B;
 }
-#conclusion{
-    position: relative;
-    height: 50%;
-    width:50%;
-    background-color: #FDB51B;
-}
-.conclusion{
-    position: relative;
-    height: 50%;
-    width:50%;
-    background-color: #FDB51B;
-}
 
 
-#canvas-container-sweden{
-    position: relative;
-    height: 50%;
-    width: 50%;
-}
-#canvas-container-sweden-1{
-    position: relative;
-    height: 50%;
-    width: 50%;
-}
+
+
 #canvas-container-norway{
     position: relative;
     height: 50%;
@@ -220,56 +201,9 @@ button:hover{
 }
 
 
-
-
-.map{
-    width: 50%;
-    cursor: pointer;
-    position: right;
-}
-.range{
-    height:80px;
-    width: 380px;
-    background: #fff;
-    border: 10px;
-    padding: 0 65px 0 45px;
-}
-.range .slidervalue{
-    position: relative;
-    width: 100%;
-}
-.range .field{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-.range .field .value{
-    position: absolute;
-    font-size: 18px;
-    font-weight: 600;
-    color: #FDB51B;
-}
-.range .field .value.left{
-    left: -22px;
-}
-.range .field .value.right{
-    right: - 43px;
-}
-.range .field input{
-    -webkit-appearance: none;
-    height: 5px;
-    width: 100%;
-    background: #FDB51B;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-}
-
 /* Footer*/
 .footer{
-    margin-top: 100px;
+    margin-top: 0px;
     width: 70%;
     padding: 100px 15%;
     background: #333;
@@ -310,4 +244,516 @@ button:hover{
     text-decoration: none;
     color:#fff;
     margin-bottom: 10px;
+}
+.icons{
+    margin-top: 30px;
+}
+.icons i{
+    font-size: 25px;
+    margin: 10px;
+}
+
+
+/* SWEDEN */
+.bannerSwe{
+    width: 100%;
+    height:60vh;
+    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
+    url("../../finalProject/resources/sweden.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.contentSwe{
+    width: 100%;
+    position: absolute;
+    top:30%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.contentSwe h1{
+    font-size: 80px;
+}
+.contentSwe p{
+    margin:20px auto;
+    font-weight: 20;
+    line-height: 1.5;
+    font-size: 30px;
+    font-family: 'Helvetica';
+    color: #333333;
+}
+
+    
+
+.sweden{
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    /*background-image: linear-gradient(rgba(253, 134, 0, 0.20), rgba(253, 134, 0, 0.20));*/
+}
+
+
+.sweden-col{
+    flex-basis: 48%;
+    padding: 30px 20px;
+   
+    
+}
+.sweden-col-chart{
+    position: relative;
+    height: 60%;
+    width: 50%;
+    padding-right: 50px;
+    padding-top: 200px;
+}
+.sweden-col h1{
+    padding-top: 0;
+    padding-left: 50px;
+    font-size: 60px;
+    font-weight: 20px;
+    font-family: "Helvetica";
+    background-size: 100%;
+    background-image: linear-gradient(45deg,rgba(194, 47, 142, 0.80), rgba(253, 134, 0, 0.80));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.sweden-col p{
+    padding-top: 0;
+    padding-left: 50px;
+    font-family: "Helvetica";
+    color: #333333;
+    line-height: 1.5;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#canvas-container-sweden-1{
+    position: relative;
+    height: 50%;
+    width: 50%;
+}
+
+/* BACKGROUND */
+.background{
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    /*background-image: linear-gradient(rgba(253, 134, 0, 0.20), rgba(253, 134, 0, 0.20));*/
+}
+
+
+.background-col{
+    flex-basis: 48%;
+    padding: 50px 10px;
+}
+
+.background-col h1{
+    padding-top: 0;
+    padding-left: 50px;
+    font-size: 60px;
+    font-weight: 20px;
+    font-family: "Helvetica";
+    color:#333333;
+}
+
+.background-col p{
+    padding-top: 0;
+    padding-left: 50px;
+    font-family: "Helvetica";
+    color: #333333;
+    line-height: 1.5;
+}
+
+.background-col p{
+    padding-top: 0;
+    padding-left: 50px;
+    font-family: "Helvetica";
+    color: #333333;
+    line-height: 1.5;
+}
+
+.background-col img{
+    width: 80%;
+}
+
+/* NORWAY */
+.bannerNorway{
+    width: 100%;
+    height:60vh;
+    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
+    url("../../finalProject/resources/norway.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*Conclusion */
+.buttonBox{
+    width:700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerConclusion{
+    width: 100%;
+    height:80vh;
+    background-image: linear-gradient(rgba(194, 47, 142, 0.10), rgba(253, 134, 0, 0.10)),    
+    url("../../finalProject/resources/conclusion2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.contentConclusion {
+    width: 100%;
+    position: absolute;
+    top:40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.contentConclusion h1{
+    font-size: 80px;
+}
+
+/*Button for sweden */
+#buttonSwe{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(253, 181, 27, 0.8);
+    background: rgba(253, 181, 27, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonSwe span{
+    background:rgba(253, 181, 27, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonSwe:hover span{
+    width: 100%;
+}
+#buttonSwe:hover{
+    border: none;
+}
+
+/*Button for Norway */
+#buttonNor{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(253, 134, 0, 0.8);
+    background: rgba(253, 134, 0, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonNor span{
+    background:rgba(253, 134, 0, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonNor:hover span{
+    width: 100%;
+}
+#buttonNor:hover{
+    border: none;
+}
+
+/*Button for denmark */
+#buttonDen {
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(194, 47, 142, 0.8);
+    background: rgba(194, 47, 142, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonDen span{
+    background:rgba(194, 47, 142, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonDen:hover span{
+    width: 100%;
+}
+#buttonDen:hover{
+    border: none;
+}
+
+/*Button for Finland */
+#buttonFin{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(225, 71, 98, 0.8);
+    background: rgba(225, 71, 98, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonFin span{
+    background:rgba(225, 71, 98, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonFin:hover span{
+    width: 100%;
+}
+#buttonFin:hover{
+    border: none;
+}
+
+/*Button for Iceland */
+#buttonIce{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(129, 46, 124, 0.8);
+    background: rgba(129, 46, 124, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonIce span{
+    background:rgba(129, 46, 124, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonIce:hover span{
+    width: 100%;
+}
+#buttonIce:hover{
+    border: none;
+}
+
+
+/*Button for sweden LINECHART */
+#buttonSweLine{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(253, 181, 27, 0.8);
+    background: rgba(253, 181, 27, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonSweLine span{
+    background:rgba(253, 181, 27, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonSweLine:hover span{
+    width: 100%;
+}
+#buttonSweLine:hover{
+    border: none;
+}
+
+/*Button for Norway LINECHART */
+#buttonNorLine{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(253, 134, 0, 0.8);
+    background: rgba(253, 134, 0, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonNorLine span{
+    background:rgba(253, 134, 0, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonNorLine:hover span{
+    width: 100%;
+}
+#buttonNorLine:hover{
+    border: none;
+}
+
+/*Button for denmark */
+#buttonDenLine {
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(194, 47, 142, 0.8);
+    background: rgba(194, 47, 142, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonDenLine span{
+    background:rgba(194, 47, 142, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonDenLine:hover span{
+    width: 100%;
+}
+#buttonDenLine:hover{
+    border: none;
+}
+
+/*Button for Finland */
+#buttonFinLine{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(225, 71, 98, 0.8);
+    background: rgba(225, 71, 98, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonFinLine span{
+    background:rgba(225, 71, 98, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonFinLine:hover span{
+    width: 100%;
+}
+#buttonFinLine:hover{
+    border: none;
+}
+
+/*Button for Iceland */
+#buttonIceLine{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(129, 46, 124, 0.8);
+    background: rgba(129, 46, 124, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonIceLine span{
+    background:rgba(129, 46, 124, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonIceLine:hover span{
+    width: 100%;
+}
+#buttonIceLine:hover{
+    border: none;
 }

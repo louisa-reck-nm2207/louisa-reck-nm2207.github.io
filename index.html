@@ -8,33 +8,33 @@
         </script>
 </head>
 <body>
-    <div class="banner">
+    <div class="banner" id="banner">
         <div class="navbar">
-            <img src="C:\Users\louis\Desktop\NM2207\web\finalProject\resources\logo.png" class="logo">
+            <img src="resources\logo.png" class="logo">
             <ul>
                 <!-- <li><a href="#">Home</a></li> This button will redirect the user to the top of the page while scrolling-->
-                <li><a href="#background-info">Background</a></li> <!--This button will redirect the user to the background information while scrolling-->
+                <li><a href="#banner">Home</a></li> <!--This button will redirect the user to the background information while scrolling-->
                  <!-- <li><a href="#">Countries</a></li> This button will redirect the user to the different countries pages while scrolling, I want to make this a drop-down menue-->
                 <li class="dropdown">
                       <a>Countries</a>
                       <ul class="dropdown-menu">
-                        <li><a href="#canvas-container-sweden">Sweden</a></li>
-                        <li><a href="#canvas-container-norway">Norway</a></li>
+                        <li><a href="sweden.html">Sweden</a></li>
+                        <li><a href="norway.html">Norway</a></li>
                         <li><a href="#canvas-container-denmark">Denmark</a></li>
                         <li><a href="#canvas-container-finland">Finland</a></li>
                         <li><a href="#canvas-container-iceland">Iceland</a></li>
                       </ul>
                 </li>
-                <li><a href="#conclusion">Conclusion</a></li> <!--This button will redirect the user to the conclusion while scrolling-->
+                <li><a href="conclusion.html">Conclusion</a></li> <!--This button will redirect the user to the conclusion while scrolling-->
                 <li><a href="#footer">About</a></li> <!--This button will redirect the user to the project documentation-->
             </ul>
         </div>
 
         <div class="content">
-            <h1>World Happiness Report</h1>
+            <h1>Happiness.</h1>
             <p>What is the trend of happiness scores in 5 Nordic countries in Europe over the last decade?<br>I WILL UPDATE THIS QUESTION </p>
             <div>
-                <button type="button"><a href="#background-info"><span></span>READ MORE</a></button>   <!--If you press this button you get directed to "Background"-->
+                <button type="button"><a href="#background"><span></span>READ MORE</a></button>   <!--If you press this button you get directed to "Background"-->
                 <button type="button"><a href="#footer"><span></span>SOURCES</a></button>     <!--If you press this button you get directed to the bottom of the page where I will write the sources I used etc.-->
             </div>
         </div>
@@ -42,42 +42,24 @@
         
     </div>
     
-    <div id="background-info">
-        <p>Here I will write some background text on the happiness report and my webpage.<br>
-           I will also try to answear questions like: Why does the nordic countries of europe score so high in the happiness report? etc
-        </p>
-    </div>
+    <!--BACKGROUND INFORMATION-->
+    <section class="background" id="background">
+        <div class="row">
+            <div class="background-col">
+                <h1>What is the World Happiness Report? </h1><br>
+                <p> The World Happiness Report is an annual survey conducted by the United Nations that ranks countries based on several factors that contribute to well-being and happiness. The report provides valuable insights into the quality of life in different countries and can be useful for policymakers and researchers to identify the factors that contribute to happiness and well-being.</p><br>
+                <p> the countries consistently ranking highly in the report are Sweden, Norway, Iceland, Denmark, and Finland. These countries are interesting to compare and examine in more detail due to their high happiness scores and shared characteristics, such as strong social welfare systems, gender equality, high levels of trust in public institutions, and a focus on environmental sustainability. By studying these countries, we can learn about the policies and practices that contribute to their success in promoting happiness and well-being, and apply these insights to other countries to help improve quality of life around the world.
+                </p><br>
+                <p>Read more under each country in the navbar</p>
+            </div>
+            <div class="background-col">
+                <img src="resources\whr2.jpg">
+            </div>
 
-    <div>
-        <img src="C:\Users\louis\Desktop\NM2207\web\finalProject\resources\map.png" class="map">
-    </div>
-
-    <div class="range">
-        <div class="slidervalue">
-            <span>100</span>
         </div>
-        <div class="field">
-            <div class="value-left">2012</div>
-            <input type="range" min="2012" max="2021" value="10" steps="1">  <!--Some sort of range slider button to show the different years on the map-->
-            <div class="value-right">2021</div>
-        </div>
-    </div>
-
-    <div id="background-info-1">
-        <p>Here I will write some background text on the happiness of sweden and the different factors of happiness from the happiness report of 2022<br>
-            You will get to this section of my webpage either by scrolling down or clicking the country sweden <br>
-            in the dropdown menue at the nav bar under countries
-        </p>
-    </div>
-
-    <div id="canvas-container-sweden">
-        <canvas id="happiness-chart-swe" width="400" height="400"></canvas>
-    </div>
+    </section>
 
 
-    <div id="canvas-container-sweden-1">
-        <canvas id="happiness-score-sweden" width="400" height="400"></canvas>
-    </div>
 
     <div>
         <button type="button" id="toggleButtonSwe"><span></span>SCORE/FACTORS</button> <!--If you click this button you get the happines score line chart for sweden-->
@@ -115,10 +97,6 @@
 
     <div id="canvas-container-iceland-1">
         <canvas id="score-iceland" width="400" height="400"></canvas>
-    </div>
-
-    <div class="conclusion" id="conclusion">
-        <p>Here I will write a little conclusion and some charts that compare the countries</p>
     </div>
 
     <div class="footer" id="footer">
