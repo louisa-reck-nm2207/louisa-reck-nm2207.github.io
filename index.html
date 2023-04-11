@@ -20,9 +20,9 @@
                       <ul class="dropdown-menu">
                         <li><a href="sweden.html">Sweden</a></li>
                         <li><a href="norway.html">Norway</a></li>
-                        <li><a href="#canvas-container-denmark">Denmark</a></li>
-                        <li><a href="#canvas-container-finland">Finland</a></li>
-                        <li><a href="#canvas-container-iceland">Iceland</a></li>
+                        <li><a href="denmark.html">Denmark</a></li>
+                        <li><a href="finland.html">Finland</a></li>
+                        <li><a href="iceland.html">Iceland</a></li>
                       </ul>
                 </li>
                 <li><a href="conclusion.html">Conclusion</a></li> <!--This button will redirect the user to the conclusion while scrolling-->
@@ -34,7 +34,7 @@
             <h1>Happiness.</h1>
             <p>What is the trend of happiness scores in 5 Nordic countries in Europe over the last decade?<br>I WILL UPDATE THIS QUESTION </p>
             <div>
-                <button type="button"><a href="#background"><span></span>READ MORE</a></button>   <!--If you press this button you get directed to "Background"-->
+                <button type="button"><a href="#footer"><span></span>DOCUMENTATION</a></button>   <!--If you press this button you get directed to "Background"-->
                 <button type="button"><a href="#footer"><span></span>SOURCES</a></button>     <!--If you press this button you get directed to the bottom of the page where I will write the sources I used etc.-->
             </div>
         </div>
@@ -46,11 +46,22 @@
     <section class="background" id="background">
         <div class="row">
             <div class="background-col">
-                <h1>What is the World Happiness Report? </h1><br>
-                <p> The World Happiness Report is an annual survey conducted by the United Nations that ranks countries based on several factors that contribute to well-being and happiness. The report provides valuable insights into the quality of life in different countries and can be useful for policymakers and researchers to identify the factors that contribute to happiness and well-being.</p><br>
-                <p> the countries consistently ranking highly in the report are Sweden, Norway, Iceland, Denmark, and Finland. These countries are interesting to compare and examine in more detail due to their high happiness scores and shared characteristics, such as strong social welfare systems, gender equality, high levels of trust in public institutions, and a focus on environmental sustainability. By studying these countries, we can learn about the policies and practices that contribute to their success in promoting happiness and well-being, and apply these insights to other countries to help improve quality of life around the world.
+                <h1>The World Happiness Report</h1><br>
+                <p> The World Happiness Report is an annual survey conducted by the United Nations that ranks countries based on a variety 
+                    of factors that influence happiness and well-being. These factors are GDP per capita, social support, helathy life expectancy, 
+                    freedom to make life choices, generosity and freedom from corruption.The report offers useful insights into the quality of life 
+                    in various countries and can help policymakers and researchers identify the factors that contribute to happiness.
                 </p><br>
-                <p>Read more under each country in the navbar</p>
+                <p>Some countries that consistently rank high in the report are the northern European countries Sweden, Norway, Denmark,
+                    Finland and Iceland. Because of their high happiness scores and shared characteristics, such as strong social welfare
+                    systems, gender equality, high levels of trust in public institutions, and a focus on environmental sustainability, 
+                    these countries are interesting to compare and examine in greater depth. By studying these countries, we can learn about
+                    the policies and practices contributing to happiness. Furthermore, we can apply these insights to other countries to help
+                    improve the global quality of life. 
+                </p><br>
+                <div class="buttonBox">
+                    <button type="button" id="buttonBackground"><a href="#banner">READ MORE</a></button> <!--If you click this button you get the happines score line chart for sweden-->
+                </div>
             </div>
             <div class="background-col">
                 <img src="resources\whr2.jpg">
@@ -58,46 +69,7 @@
 
         </div>
     </section>
-
-
-
-    <div>
-        <button type="button" id="toggleButtonSwe"><span></span>SCORE/FACTORS</button> <!--If you click this button you get the happines score line chart for sweden-->
-    </div>
-
-    <!--I will repeat the steps for sweden with the following countries: Norway, Denmark, finland and Iceland-->
-
-    <div id="canvas-container-norway">
-        <canvas id="factors-norway" width="400" height="400"></canvas>
-    </div>
-
-    <div id="canvas-container-norway-1">
-        <canvas id="score-norway" width="400" height="400"></canvas>
-    </div>
-
-    <div id="canvas-container-denmark">
-        <canvas id="factors-denmark" width="400" height="400"></canvas>
-    </div>
-
-    <div id="canvas-container-denmark-1">
-        <canvas id="score-denmark" width="400" height="400"></canvas>
-    </div>
-
-    <div id="canvas-container-finland">
-        <canvas id="factors-finland" width="400" height="400"></canvas>
-    </div>
-
-    <div id="canvas-container-finland-1">
-        <canvas id="score-finland" width="400" height="400"></canvas>
-    </div>
-
-    <div id="canvas-container-iceland">
-        <canvas id="factors-iceland" width="400" height="400"></canvas>
-    </div>
-
-    <div id="canvas-container-iceland-1">
-        <canvas id="score-iceland" width="400" height="400"></canvas>
-    </div>
+    
 
     <div class="footer" id="footer">
         <div class="col-1">

@@ -5,14 +5,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/appstyle.css">
     <script defer type="text/javascript" src="appscripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/ab17712221.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="bannerConclusion">
+    <div class="bannerIce">
         <div class="navbar">
             <img src="C:\Users\louis\Desktop\NM2207\web\finalProject\resources\logo.png" class="logo">
             <ul>
-                <li><a href="index.html">home</a></li> <!--This button will redirect the user to the home page -->
-                 <!-- This button will redirect the user to the different countries pages while scrolling, I want to make this a drop-down menue-->
+                <li><a href="index.html">home</a></li> <!--This button will redirect the user to the home page-->
+                 <!--  This button will redirect the user to the different countries pages, this is a drop-down menue-->
                 <li class="dropdown">
                       <a>Countries</a>
                       <ul class="dropdown-menu">
@@ -23,18 +24,23 @@
                         <li><a href="iceland.html">Iceland</a></li>
                       </ul>
                 </li>
-                <li><a href="conclusion.html">Conclusion</a></li> <!--This button will redirect the user to the conclusion-page-->
+                <li><a href="conclusion.html">Conclusion</a></li> <!--This button will redirect the user to the conclusion-->
                 <li><a href="#footer">About</a></li> <!--This button will redirect the user to the project documentation-->
             </ul>
         </div>
 
-        <div class="contentConclusion">
-            <h1>CONCLUSION</h1><br>
+        <div class="contentSwe">
+            <h1>ICELAND</h1><br>
+            <div class="icons">
+                <i class="fas fa-user" style="color: #fff;"></i> 0.4 Million inhabitants    
+                <i class="fas fa-map-marker-alt" style="color: #fff;"></i> Reykjavík
+                <i class="fas fa-star" style="color: #fff;"></i> 3:rd place in WHR 2022
+            </div>
+
         </div>
+        <!--Design and code: followed this youtube tutorial: https://www.youtube.com/watch?v=PgAZ8KzfhO8-->
+        
     </div>
-
-    <!--Design and code: followed this youtube tutorial: https://www.youtube.com/watch?v=PgAZ8KzfhO8-->
-
  
     <section class="country">
         <div class="row">
@@ -51,22 +57,16 @@
                 </p>
             </div>
             <div class="col-chart-bar">
-                <div class="buttonBox">
-                    <button type="button" id="buttonSwe"><span></span>SWEDEN</button>
-                    <button type="button" id="buttonNor"><span></span>NORWAY</button>
-                    <button type="button" id="buttonDen"><span></span>DENMARK</button>
-                    <button type="button" id="buttonFin"><span></span>FINLAND</button>
-                    <button type="button" id="buttonIce"><span></span>ICELAND</button>
-                </div>
-                <canvas id="conclusionChartBar"></canvas>
+                <canvas id="factors-iceland" width="400" height="400"></canvas>
             </div>
+
         </div>
     </section>
 
     <section class="country">
         <div class="row">
             <div class="country-col">
-                <h1>Sweden: A Happy Country</h1><br>
+                <h1>Iceland: Little but Happy</h1><br>
                 <p>If we look at the World Happiness Scores of Sweden between the years 2012 and 2021, we can see that Sweden's happiness score has been consistently high throughout this period. In 2012, Sweden's happiness score was 75.6 which is the highest score during this decade. The score has ranged between 72.4 and 75.6. This indicates that Sweden has been successful in maintaining a high level of happiness and well-being among its citizens, despite the challenges posed by events such as the COVID-19 pandemic.<br>
 
                     Sweden's high ranking can be attributed to several factors. The country has a strong social welfare system, which provides its citizens with access to high-quality healthcare, education, and other public services. Sweden also values work-life balance, with a focus on shorter work weeks, parental leave, and flexible working arrangements.<br>
@@ -74,14 +74,7 @@
                     Additionally, Sweden has a high level of trust in society, both between individuals and in institutions. This trust is fostered by low levels of corruption and a commitment to social cohesion. Sweden is also known for its emphasis on sustainability, innovation, and design, which contribute to a sense of well-being among its citizens..</p>
             </div>
             <div class="col-chart-line">
-                <div class="buttonBox">
-                    <button type="button" id="buttonSweLine"><span></span>SWEDEN</button>
-                    <button type="button" id="buttonNorLine"><span></span>NORWAY</button>
-                    <button type="button" id="buttonDenLine"><span></span>DENMARK</button>
-                    <button type="button" id="buttonFinLine"><span></span>FINLAND</button>
-                    <button type="button" id="buttonIceLine"><span></span>ICELAND</button>
-                </div>
-                <canvas id="conclusionChartLine"></canvas>
+                <canvas id="score-iceland" width="400" height="400"></canvas>
             </div>
 
         </div>

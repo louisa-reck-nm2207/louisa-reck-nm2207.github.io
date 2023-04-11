@@ -7,7 +7,7 @@
     width: 100%;
     height:100vh;
     background-image: linear-gradient(rgba(194, 47, 142, 0.20), rgba(253, 134, 0, 0.20)),                  
-    url("../../finalProject/resources/background.jpg");
+    url("../resources/background.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -112,6 +112,8 @@
     text-decoration: none;
     color:#fff;
 }
+
+
 button{
     width: 200px;
     padding: 15px 0;
@@ -259,9 +261,10 @@ button:hover{
     width: 100%;
     height:60vh;
     background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
-    url("../../finalProject/resources/sweden.jpg");
+    url("../resources/sweden.jpg");
     background-size: cover;
     background-position: center;
+    
 }
 .contentSwe{
     width: 100%;
@@ -285,29 +288,37 @@ button:hover{
 
     
 
-.sweden{
+.country{
     width: 100%;
     margin: auto;
     padding-top: 10px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
     /*background-image: linear-gradient(rgba(253, 134, 0, 0.20), rgba(253, 134, 0, 0.20));*/
 }
 
 
-.sweden-col{
+.country-col{
     flex-basis: 48%;
     padding: 30px 20px;
    
     
 }
-.sweden-col-chart{
+.col-chart-bar{
     position: relative;
     height: 60%;
     width: 50%;
     padding-right: 50px;
-    padding-top: 200px;
+    padding-top: 50px;
 }
-.sweden-col h1{
+
+.col-chart-line{
+    position: relative;
+    height: 60%;
+    width: 50%;
+    padding-right: 50px;
+    padding-top: 80px;
+}
+.country-col h1{
     padding-top: 0;
     padding-left: 50px;
     font-size: 60px;
@@ -322,7 +333,7 @@ button:hover{
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
-.sweden-col p{
+.country-col p{
     padding-top: 0;
     padding-left: 50px;
     font-family: "Helvetica";
@@ -392,7 +403,7 @@ button:hover{
     width: 100%;
     height:60vh;
     background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
-    url("../../finalProject/resources/norway.jpg");
+    url("../resources/norway.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -410,7 +421,7 @@ button:hover{
     width: 100%;
     height:80vh;
     background-image: linear-gradient(rgba(194, 47, 142, 0.10), rgba(253, 134, 0, 0.10)),    
-    url("../../finalProject/resources/conclusion2.jpg");
+    url("../resources/conclusion2.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -756,4 +767,61 @@ button:hover{
 }
 #buttonIceLine:hover{
     border: none;
+}
+
+/* BUTTON FOR HOME - READ MORE */
+#buttonBackground{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(253, 181, 27, 0.8);
+    background:  rgba(253, 181, 27, 0.8);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#buttonBackground a{
+    display: block;
+    text-decoration: none;
+    color:#fff;
+}
+
+
+
+/* DENMARK */
+
+.bannerDen{
+    width: 100%;
+    height:60vh;
+    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
+    url("../resources/denmark.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* FINLAND */
+
+.bannerFin{
+    width: 100%;
+    height:60vh;
+    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
+    url("../resources/finland.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ICELAND */
+
+.bannerIce{
+    width: 100%;
+    height:60vh;
+    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
+    url("../resources/iceland2.jpg");
+    background-size: cover;
+    background-position: center;
 }

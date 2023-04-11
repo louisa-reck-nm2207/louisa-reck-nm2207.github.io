@@ -10,16 +10,16 @@ const labelCategories = [
     ["Generosity"],
     ["Freedom","from corruption"],
 ]   
-const labelYears= ["2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"]
+const labelYears= ["2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"]
 
 // CHARTS FOR SWEDEN
 const dataObj = {
     labels: labelCategories,
     datasets: [
         {
-            label: "SWEDEN",//country name in quotes
+            label: "Sweden",//country name in quotes
             data:  [1.920, 1.204, 0.803, 0.724, 0.218, 0.512],// data of the country as an array
-            borderWidth: 2,
+            borderWidth: 3,
             fill: false,
             backgroundColor: "rgba(253, 181, 27, 0.6)",
             borderColor: "rgba(253, 181, 27, 0.6)",
@@ -62,7 +62,7 @@ new Chart("happiness-chart-swe",
         datasets: [
             {
                 label: "Sweden",//country name in quotes
-                data:  [75.6, 74.3, 72.4, 72.9, 73.7, 72.9, 73.8, 74, 73.1, 73.8],// data of the country as an array
+                data:  [74.3, 72.4, 72.9, 73.7, 72.9, 73.8, 74, 73.1, 74.4, 74],// data of the country as an array
                 borderWidth: 3,
                 fill: true,
                 backgroundColor: "rgba(253, 181, 27, 0.6)",
@@ -86,14 +86,16 @@ new Chart("happiness-chart-swe",
                     fontSize: 14,
                     fontColor: 'rgb(150,150,150)',
                     fontStyle: "normal",
-                    },
-                scales: {
-                    y: {
-                        display: true,
-                        suggestedMin: 70,
-                        suggestedMax: 80
-                    }
                 },
+                scales: {
+                    yAxes: [{
+                        display: true,
+                        ticks: {
+                             suggestedMin: 70,    // minimum will be 0, unless there is a lower value.
+                             suggestedMax: 80,
+                        }
+                    }]
+                }
             },
         });
 
@@ -107,8 +109,8 @@ new Chart("happiness-chart-swe",
                 data:  [1.997, 1.239, 0.786, 0.728, 0.217, 0.474],// data of the country as an array
                 borderWidth: 2,
                 fill: true,
-                backgroundColor: "rgba(253, 134, 0, 0.4)",
-                borderColor: "rgba(253, 134, 0, 0.4)",
+                backgroundColor: "rgba(253, 134, 0, 0.6)",
+                borderColor: "rgba(253, 134, 0, 0.6)",
             }
         ]
     }
@@ -123,10 +125,11 @@ new Chart("happiness-chart-swe",
             },
             title: {
                 display: true,
-                text: ['Happiness factors Norway 2022'],
-                fontFamily: "Segoi UI",
-                fontSize: 24,
-                fontColor: 'rgb(90,90,90)',
+                text: ['Happiness explained by six factors'],
+                fontFamily: "helvetica",
+                fontSize: 14,
+                fontColor: 'rgb(150,150,150)',
+                fontStyle: "normal",
                 },
                 scales: {
                     yAxes: [{
@@ -145,11 +148,11 @@ new Chart("happiness-chart-swe",
         datasets: [
             {
                 label: "Happiness score Norway",//country name in quotes
-                 data:  [76.8, ,74.4, 76, 76, 75.8, 74.4, 74.4, 72.9, 73.7],// data of the country as an array
-                borderWidth: 1,
+                 data:  [ ,74.4, 76, 76, 75.8, 74.4, 74.4, 72.9, 73.6, 73.2],// data of the country as an array
+                borderWidth: 3,
                 fill: true,
-                backgroundColor: "rgba(253, 134, 0, 0.4)",
-                borderColor: "rgba(253, 134, 0, 0.4)",
+                backgroundColor: "rgba(253, 134, 0, 0.6)",
+                borderColor: "rgba(253, 134, 0, 0.8)",
             }
         ]
     }
@@ -165,16 +168,17 @@ new Chart("happiness-chart-swe",
             },
             title: {
                 display: true,
-                text: ['Happiness score in Norway over the last decade'],
-                fontFamily: "Segoi UI",
-                fontSize: 24,
-                fontColor: 'rgb(90,90,90)',
+                text: [" Norway's Happiness Score during the last decade"],
+                fontFamily: "Helvetica",
+                fontSize: 14,
+                fontColor: 'rgb(150,150,150)',
+                fontStyle: "normal",
                 },
                 scales: {
                     yAxes: [{
                         display: true,
                         ticks: {
-                            suggestedMin: 65,    // minimum will be 0, unless there is a lower value.
+                            suggestedMin: 70,    // minimum will be 0, unless there is a lower value.
                             suggestedMax: 80,
                         }
                     }]
@@ -191,8 +195,8 @@ new Chart("happiness-chart-swe",
                 data:  [1.953, 1.243, 0.777, 0.719, 0.188, 0.532],// data of the country as an array
                 borderWidth: 2,
                 fill: true,
-                backgroundColor: "rgba(194, 47, 142, 0.4)",
-                borderColor: "rgba(194, 47, 142, 0.4)",
+                backgroundColor: "rgba(194, 47, 142, 0.6)",
+                borderColor: "rgba(194, 47, 142, 0.6)",
             }
         ]
     }
@@ -207,10 +211,11 @@ new Chart("happiness-chart-swe",
             },
             title: {
                 display: true,
-                text: ['Happiness factors Denmark 2022'],
-                fontFamily: "Segoi UI",
-                fontSize: 24,
-                fontColor: 'rgb(90,90,90)',
+                text: ['Happiness explained by six factors'],
+                fontFamily: "Helvetica",
+                fontSize: 14,
+                fontColor: 'rgb(150,150,150)',
+                fontStyle: "normal",
                 },
                 scales: {
                     yAxes: [{
@@ -229,11 +234,11 @@ new Chart("happiness-chart-swe",
         datasets: [
             {
                 label: "Happiness score Denmark",//country name in quotes
-                data:  [75.2, 75.9, 75.1, 75.1, 75.6, 75.9, 76.5, 76.9, 75.2, 76.4],// data of the country as an array
-                borderWidth: 2,
+                data:  [75.9, 75.1, 75.1, 75.6, 75.9, 76.5, 76.9, 75.2, 77, 75.9],// data of the country as an array
+                borderWidth: 3,
                 fill: true,
-                backgroundColor: "rgba(194, 47, 142, 0.4)",
-                borderColor: "rgba(194, 47, 142, 0.4)",
+                backgroundColor: "rgba(194, 47, 142, 0.6)",
+                borderColor: "rgba(194, 47, 142, 0.8)",
             }
         ]
     }
@@ -249,16 +254,17 @@ new Chart("happiness-chart-swe",
             },
             title: {
                 display: true,
-                text: ['Happiness score in Denmark over the last decade'],
-                fontFamily: "Segoi UI",
-                fontSize: 24,
-                fontColor: 'rgb(90,90,90)',
+                text: [" Denmark's Happiness Score during the last decade"],
+                fontFamily: "Helvetica",
+                fontSize: 14,
+                fontColor: 'rgb(150,150,150)',
+                fontStyle: "normal",
                 },
                 scales: {
                     yAxes: [{
                         display: true,
                         ticks: {
-                            suggestedMin: 65,    // minimum will be 0, unless there is a lower value.
+                            suggestedMin: 70,    // minimum will be 0, unless there is a lower value.
                             suggestedMax: 80,
                         }
                     }]
@@ -275,8 +281,8 @@ new Chart("happiness-chart-swe",
                 data:  [1.892, 1.258, 0.775, 0.736, 0.109, 0.534],// data of the country as an array
                 borderWidth: 2,
                 fill: true,
-                backgroundColor: "rgba(225, 71, 98, 0.4)",
-                borderColor: "rgba(225, 71, 98, 0.4)",
+                backgroundColor: "rgba(225, 71, 98, 0.6)",
+                borderColor: "rgba(225, 71, 98, 0.6)",
             }
         ]
     }
@@ -292,10 +298,11 @@ new Chart("happiness-chart-swe",
             },
             title: {
                 display: true,
-                text: ['Happiness factors Finland 2022'],
-                fontFamily: "Segoi UI",
-                fontSize: 24,
-                fontColor: 'rgb(90,90,90)',
+                text: ['Happiness explained by six factors'],
+                fontFamily: "Helvetica",
+                fontSize: 14,
+                fontColor: 'rgb(150,150,150)',
+                fontStyle: "normal",
                 },
                 scales: {
                     yAxes: [{
@@ -314,11 +321,11 @@ new Chart("happiness-chart-swe",
         datasets: [
             {
                 label: "Finland",//country name in quotes
-                data:  [74.2, 74.5, 73.8, 74.5, 76.6, 77.9, 78.6, 77.8, 78.9, 78.2],// data of the country as an array
-                borderWidth: 2,
+                data:  [74.5, 73.8, 74.5, 76.6, 77.9, 78.6, 77.8, 78.9, 77.9, 78],// data of the country as an array
+                borderWidth: 3,
                 fill: true,
-                backgroundColor: "rgba(225, 71, 98, 0.4)",
-                borderColor: "rgba(225, 71, 98, 0.4)",
+                backgroundColor: "rgba(225, 71, 98, 0.6)",
+                borderColor: "rgba(225, 71, 98, 0.8)",
             }
         ]
     }
@@ -334,16 +341,17 @@ new Chart("happiness-chart-swe",
             },
             title: {
                 display: true,
-                text: ['Happiness score in Finland over the last decade'],
-                fontFamily: "Segoi UI",
-                fontSize: 24,
-                fontColor: 'rgb(90,90,90)',
+                text: ["Finland's Happiness Score during the last decade"],
+                fontFamily: "Helvetica",
+                fontSize: 14,
+                fontColor: 'rgb(150,150,150)',
+                fontStyle: "normal",
                 },
                 scales: {
                     yAxes: [{
                         display: true,
                         ticks: {
-                            suggestedMin: 65,    // minimum will be 0, unless there is a lower value.
+                            suggestedMin: 70,    // minimum will be 0, unless there is a lower value.
                             suggestedMax: 80,
                         }
                     }]
@@ -360,8 +368,8 @@ new Chart("happiness-chart-swe",
                 data:  [1.936, 1.320, 0.803, 0.718, 0.270, 0.191],// data of the country as an array
                 borderWidth: 2,
                 fill: true,
-                backgroundColor: "rgba(129, 46, 124, 0.4)",
-                borderColor: "rgba(129, 46, 124, 0.4)",
+                backgroundColor: "rgba(129, 46, 124, 0.6)",
+                borderColor: "rgba(129, 46, 124, 0.6)",
             }
         ]
     }
@@ -377,10 +385,11 @@ new Chart("happiness-chart-swe",
             },
             title: {
                 display: true,
-                text: ['Happiness factors Iceland 2022'],
-                fontFamily: "Segoi UI",
-                fontSize: 24,
-                fontColor: 'rgb(90,90,90)',
+                text: ['Happiness explained by six factors'],
+                fontFamily: "Helvetica",
+                fontSize: 14,
+                fontColor: 'rgb(150,150,150)',
+                fontStyle: "normal",
                 },
                 scales: {
                     yAxes: [{
@@ -399,11 +408,11 @@ new Chart("happiness-chart-swe",
         datasets: [
             {
                 label: "Iceland",//country name in quotes
-                data:  [69.7, 67.6, 70.2, 68.3, 70.4, 70.6, 69.6, 72.5, 70.3, 70.4],// data of the country as an array
-                borderWidth: 2,
+                data:  [75, 75, ,75.1, 74.8, ,75.3, 75.8, 75.7, 75.3],// data of the country as an array
+                borderWidth: 3,
                 fill: true,
-                backgroundColor: "rgba(129, 46, 124, 0.4)",
-                borderColor: "rgba(129, 46, 124, 0.4)",
+                backgroundColor: "rgba(129, 46, 124, 0.6)",
+                borderColor: "rgba(129, 46, 124, 0.8)",
             }
         ]
     }
@@ -419,16 +428,17 @@ new Chart("happiness-chart-swe",
             },
             title: {
                 display: true,
-                text: ['Happiness score in Iceland over the last decade'],
-                fontFamily: "Segoi UI",
-                fontSize: 24,
-                fontColor: 'rgb(90,90,90)',
+                text: [" Iceland's Happiness Score during the last decade"],
+                fontFamily: "Helvetica",
+                fontSize: 14,
+                fontColor: 'rgb(150,150,150)',
+                fontStyle: "normal",
                 },
                 scales: {
                     yAxes: [{
                         display: true,
                         ticks: {
-                            suggestedMin: 65,    // minimum will be 0, unless there is a lower value.
+                            suggestedMin: 70,    // minimum will be 0, unless there is a lower value.
                             suggestedMax: 80,
                         }
                     }]
@@ -544,11 +554,11 @@ function toggleDatasetVisibility(index) {
 // This code adds an event listener to each button that calls the toggleDatasetVisibility function with the index of the corresponding dataset (0 for Sweden, 1 for Norway, and so on). The toggleDatasetVisibility function then uses the getDatasetMeta method to get the metadata for the dataset with the given index, toggles the hidden property to hide or show the dataset, and then calls the update method on the chart to redraw it with the updated visibility settings.
 
 // CONCLUSION LINE CHART
-var swedenLine = [75.6, 74.3, 72.4, 72.9, 73.7, 72.9, 73.8, 74, 73.1, 73.8];
-var norwayLine = [76.8, 76.8, 74.4, 76, 76, 75.8, 74.4, 74.4, 72.9, 73.7];
-var denmarkLine = [75.2, 75.9, 75.1, 75.1, 75.6, 75.9, 76.5, 76.9, 75.2, 76.4];
-var finlandLine = [74.2, 74.5, 73.8, 74.5, 76.6, 77.9, 78.6, 77.8, 78.9, 78.2];
-var icelandLine= [69.7, 67.6, 70.2, 68.3, 70.4, 70.6, 69.6, 72.5, 70.3, 70.4];
+var swedenLine = [74.3, 72.4, 72.9, 73.7, 72.9, 73.8, 74, 73.1, 74.4, 74];
+var norwayLine = [ ,74.4, 76, 76, 75.8, 74.4, 74.4, 72.9, 73.6, 73.2];
+var denmarkLine = [75.9, 75.1, 75.1, 75.6, 75.9, 76.5, 76.9, 75.2, 77, 75.9];
+var finlandLine = [74.5, 73.8, 74.5, 76.6, 77.9, 78.6, 77.8, 78.9, 77.9, 78];
+var icelandLine= [75, 75, ,75.1, 74.8, ,75.3, 75.8, 75.7, 75.3];
 
 var conclusionChartLine = new Chart(document.getElementById("conclusionChartLine"), {
     type: 'line',
@@ -604,6 +614,15 @@ var conclusionChartLine = new Chart(document.getElementById("conclusionChartLine
         title: {
             display: false,
             },
+        scales: {
+            yAxes: [{
+                display: true,
+                ticks: {
+                    suggestedMin: 70,    // minimum will be 0, unless there is a lower value.
+                    suggestedMax: 80,
+                }
+            }]
+        }
     }
 });
 
