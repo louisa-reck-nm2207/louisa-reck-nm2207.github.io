@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Title of the webpage -->
     <title>Louisa's data story</title>
+
+    <!-- Import Chart.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+    <!-- Link to my CSS file for styling the webpage -->
     <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+
+    <!-- Defer the execution of my JavaScript file -->
     <script defer type="text/javascript" src="appscripts/main.js"></script>
+
+    <!-- Include Font Awesome icons -->
     <script src="https://kit.fontawesome.com/ab17712221.js" crossorigin="anonymous"></script>
 </head>
+
+<!--HEADER-->
+<!-- A banner section containing a navigation bar and a content section -->
 <body>
     <div class="bannerSwe">
+        <!-- Navigation bar -->
         <div class="navbar">
-            <img src="C:\Users\louis\Desktop\NM2207\web\finalProject\resources\logo.png" class="logo">
+            <!-- Logo image -->
+            <img src="resources\logo.png" class="logo">
+            
+            <!-- A unordered ist of links to different sections of the webpage -->
             <ul>
-                <li><a href="index.html">home</a></li> <!--This button will redirect the user to the home page-->
-                 <!--  This button will redirect the user to the different countries pages, this is a drop-down menue-->
+                <li><a href="index.html">home</a></li> 
+
+                <!-- A dropdown menu containing links to different country pages -->
                 <li class="dropdown">
                       <a>Countries</a>
                       <ul class="dropdown-menu">
@@ -24,24 +41,32 @@
                         <li><a href="iceland.html">Iceland</a></li>
                       </ul>
                 </li>
-                <li><a href="conclusion.html">Conclusion</a></li> <!--This button will redirect the user to the conclusion-->
-                <li><a href="#footer">About</a></li> <!--This button will redirect the user to the project documentation-->
+                <!-- A link to the conclusion section of the webpage -->
+                <li><a href="conclusion.html">Conclusion</a></li> 
+                <!-- A link to the about section of the webpage -->
+                <li><a href="#footer">About</a></li>
             </ul>
         </div>
 
+        <!-- Heading of the webpage -->
         <div class="contentSwe">
             <h1>SWEDEN</h1><br>
             <div class="icons">
-                <i class="fas fa-user" style="color: #fff;"></i> 10.6 Million inhabitants    
+                <!-- Icon of a person and number of inhabitants -->
+                <i class="fas fa-user" style="color: #fff;"></i> 10.6 Million inhabitants
+                <!-- Icon of a map marker and name of the capital city -->    
                 <i class="fas fa-map-marker-alt" style="color: #fff;"></i> Stockholm 
+                <!-- Icon of a star and ranking of Sweden in World Happiness Report 2022 -->
                 <i class="fas fa-star" style="color: #fff;"></i> 6:th place in WHR 2022
             </div>
 
         </div>
-        <!--Design and code: followed this youtube tutorial: https://www.youtube.com/watch?v=PgAZ8KzfhO8-->
+         <!--For this design and code, I followed this youtube tutorial and modified it a bit to fit my website: https://www.youtube.com/watch?v=PgAZ8KzfhO8-->
         
     </div>
  
+
+    <!-- This section gives some background on Swedens Happiness factor scores for 2022-->
     <section class="country">
         <div class="row">
             <div class="country-col">
@@ -58,12 +83,15 @@
                 </p>
             </div>
             <div class="col-chart-bar">
+                <!-- A chart displaying the Happiness factors -->
                 <canvas id="happiness-chart-swe" width="400" height="400"></canvas>
             </div>
 
         </div>
     </section>
 
+    
+    <!-- This section gives some information about Swedens Happiness scores from 2013-2022-->
     <section class="sweden">
         <div class="row">
             <div class="country-col">
@@ -80,35 +108,43 @@
                 </p>
             </div>
             <div class="col-chart-line">
+                 <!-- Line chart displaying the happiness score trend for sweden during the last decade -->
                 <canvas id="happiness-score-sweden" width="400" height="400"></canvas>
             </div>
 
         </div>
     </section>
     
-    <div class="footer" id="footer">
-        <div class="col-1">
-            <h3>SOURCES</h3>
-            <a href="https://worldhappiness.report/ed/2022/">World Happiness Report 2022</a>
-            <a href="https://www.gapminder.org/data/">Gapminder</a>
-            <a href="https://chat.openai.com/">ChatGPT</a>
-        </div>
-
-        <div class="col-2">
-            <h3>ABOUT</h3>
-            <a href="#">Project Report</a>
-            <a href="diary.html">Diary entries</a>
-            <a href="#">Storyboard</a>
-        </div>
-            
-        <div class="col-3">
-            <h3>CONTACT</h3>
-            <p> Louisa Reck </p><br>
-            <p>National University of Singapore</p><br>
-            <p>NM2207 - Computational Media Literacy</p><br>
-            <a href="https://github.com/louisa-reck-nm2207/louisa-reck-nm2207.github.io">Github repository</a>
-        </div>
+<!-- FOOTER -->
+<!-- This is the code for the footer of my web page -->
+<div class="footer" id="footer">
+    <!-- This is the first column of the footer, containing different links to sources -->
+    <div class="col-1">
+        <h3>SOURCES</h3>
+        <a href="https://worldhappiness.report/ed/2022/">World Happiness Report 2022</a>
+        <a href="https://www.gapminder.org/data/">Gapminder</a>
+        <a href="https://chat.openai.com/">ChatGPT</a>
     </div>
+
+    <!-- This is the second column of the footer, containing links to some of teh project documentation -->
+    <div class="col-2">
+        <h3>ABOUT</h3>
+        <a href="writeup.html">Project Report</a>
+        <a href="diary.html">Diary entries</a>
+        <a href="storyboard.html">Storyboard</a>
+    </div>
+
+     <!-- This is the third column of the footer, containing my contact information and the Github repository-->
+    <div class="col-3">
+        <h3>CONTACT</h3>
+        <p> Louisa Reck </p><br>
+        <p>National University of Singapore</p><br>
+        <p>NM2207 - Computational Media Literacy</p><br>
+        <a href="https://github.com/louisa-reck-nm2207/louisa-reck-nm2207.github.io">Github repository</a>
+    </div>
+</div>
+    <!--For the design and code, I followed this youtube tutorial and modified it a bit to fit my website: https://www.youtube.com/watch?v=lLdzlLL33G8-->
 
 </body>
 </html>
+

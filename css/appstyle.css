@@ -1,17 +1,26 @@
+
+/*This part of the code sets default styles for all elements on the page, including setting the margin and padding to 0, and setting the font-family to sans-serif.*/
 *{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
+
+/*Disclaimer: A lot of this code ( especially for the banner, Navbar, Buttons and Footer was inspired by the folowing tutorials on youtube 
+https://www.youtube.com/watch?v=PgAZ8KzfhO8
+ https://www.youtube.com/watch?v=lLdzlLL33G8*/
+
+/*styles the banner section on the home page (index.html).*/
 .banner{
     width: 100%;
     height:100vh;
     background-image: linear-gradient(rgba(194, 47, 142, 0.20), rgba(253, 134, 0, 0.20)),                  
-    url("../resources/background.jpg");
+    url("../resources/background.jpg"); /*sets a background image using a linear gradient and an image URL*/
     background-size: cover;
     background-position: center;
 }
 
+/* styles the navigation bar on the home page.*/
 .navbar{
     width: 85%;
     margin: auto;
@@ -20,21 +29,31 @@
     align-items: center;
     justify-content: space-between;
 }
+
+/* defines the size of the logo on the banner*/
 .logo{
     width: 100px;
-    cursor: pointer;
 }
+
+/* styles each list item in the navigation bar. It also removes the bullet point using list-style:none, */
 .navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
+
+/* styles list item link to be in uppercase, white with no underline. */
 .navbar ul li a{
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
 }
+
+/* This part of the code adds an underline effect to each link when the user hovers over it. 
+It adds a pseudo-element (::after) to each list item, which is an invisible element that is positioned below the link. 
+When the user hovers over the link, the width of the pseudo-element is transitioned to 100%, creating an underline effect.*/
+
 .navbar ul li::after{
     content:'';
     height: 3px;
@@ -45,6 +64,7 @@
     bottom: -10px;
     transition:0.5s;
 }
+
 .navbar ul li:hover::after{
     width: 100%;
 }
@@ -55,21 +75,24 @@
     position: relative;
 }
   
+/*sets the properties of the dropdown menu*/
 .dropdown-menu {
-    display: none;
+    display: none; /*Sets the display to none, so it's hidden until it's triggered by a hover event*/
     position: absolute;
     top: 100%;
     left: 0;
     background-color: rgba(253, 134, 0, 0.20);
     border-radius: 10px;
     padding: 30px;
-    z-index: 9999;
+    z-index: 9999; /*the z-index property ensures that the dropdown menu appears on top of other elements on the page*/
 }
 
+/* styles the individual list items in the dropdown menu by adding padding to each item */
 .dropdown-menu li {
     padding: 7px;
 }
 
+/*creates a visual effect on the dropdown items by adding a line after each item using the ::after pseudo-element*/
 .navbar .dropdown-menu li::after {
     content:'';
     height: 3px;
@@ -81,14 +104,21 @@
     transition:0.5s;
 }
 
-
+/*  triggers the dropdown menu to display when the user hovers over the dropdown container*/
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-  
+/* Styles the icon of each countries HTML page so that there is some space in between them */
+.icons{
+    margin-top: 30px;
+}
+.icons i{
+    font-size: 25px;
+    margin: 10px;
+}
 
-
+/* Styles the different components of the content section*/  
 .content{
     width: 100%;
     position: absolute;
@@ -107,13 +137,14 @@
     line-height: 25px;
 }
 
+/* Styles the link to be white with no underline*/  
 .content a{
     display: block;
     text-decoration: none;
     color:#fff;
 }
 
-
+/* Styles the button on the landing page of the web site*/
 button{
     width: 200px;
     padding: 15px 0;
@@ -128,6 +159,7 @@ button{
     position: relative;
     overflow: hidden;
 }
+/* creates a span element for the button with an transition of 0.5 sec*/
 span{
     background:#FDB51B;
     height: 100%;
@@ -139,71 +171,41 @@ span{
     z-index: -1;
     transition: 0.5s;
 }
+/* Creates a highlight effect that fills the button from left to right*/
 button:hover span{
     width: 100%;
 }
+/* removes the border of the button element on hover*/
 button:hover{
     border: none;
 }
-#background-info{
+
+/* BUTTON FOR HOME - READ MORE */
+#buttonBackground{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(253, 181, 27, 0.8);
+    background:  rgba(253, 181, 27, 0.8);
+    color: #fff;
+    cursor: pointer;
     position: relative;
-    height: 50%;
-    width:50%;
-    background-color: #FDB51B;
+    overflow: hidden;
 }
-#background-info-1{
-    position: relative;
-    height: 50%;
-    width:50%;
-    background-color: #FDB51B;
+
+#buttonBackground a{
+    display: block;
+    text-decoration: none;
+    color:#fff;
 }
 
 
+/* FOOTER*/
 
-
-#canvas-container-norway{
-    position: relative;
-    height: 50%;
-    width: 50%;
-}
-#canvas-container-norway-1{
-    position: relative;
-    height: 50%;
-    width: 50%;
-}
-#canvas-container-denmark{
-    position: relative;
-    height: 50%;
-    width: 50%;
-}
-#canvas-container-denmark-1{
-    position: relative;
-    height: 50%;
-    width: 50%;
-}
-#canvas-container-finland{
-    position: relative;
-    height: 50%;
-    width: 50%;
-}
-#canvas-container-finland-1{
-    position: relative;
-    height: 50%;
-    width: 50%;
-}
-#canvas-container-iceland{
-    position: relative;
-    height: 50%;
-    width: 50%;
-}
-#canvas-container-iceland-1{
-    position: relative;
-    height: 50%;
-    width: 50%;
-}
-
-
-/* Footer*/
+/* Styles the different footer elements*/
 .footer{
     margin-top: 0px;
     width: 70%;
@@ -247,53 +249,13 @@ button:hover{
     color:#fff;
     margin-bottom: 10px;
 }
-.icons{
-    margin-top: 30px;
-}
-.icons i{
-    font-size: 25px;
-    margin: 10px;
-}
 
-
-/* SWEDEN */
-.bannerSwe{
-    width: 100%;
-    height:60vh;
-    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
-    url("../resources/sweden.jpg");
-    background-size: cover;
-    background-position: center;
-    
-}
-.contentSwe{
-    width: 100%;
-    position: absolute;
-    top:30%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
-}
-.contentSwe h1{
-    font-size: 80px;
-}
-.contentSwe p{
-    margin:20px auto;
-    font-weight: 20;
-    line-height: 1.5;
-    font-size: 30px;
-    font-family: 'Helvetica';
-    color: #333333;
-}
-
-    
-
+/* The styles to display the charts and the text for each country*/
 .country{
     width: 100%;
     margin: auto;
     padding-top: 10px;
     padding-bottom: 70px;
-    /*background-image: linear-gradient(rgba(253, 134, 0, 0.20), rgba(253, 134, 0, 0.20));*/
 }
 
 
@@ -311,13 +273,16 @@ button:hover{
     padding-top: 50px;
 }
 
+
 .col-chart-line{
     position: relative;
     height: 60%;
     width: 50%;
     padding-right: 50px;
-    padding-top: 80px;
+    padding-top: 50px;
 }
+
+
 .country-col h1{
     padding-top: 0;
     padding-left: 50px;
@@ -347,22 +312,14 @@ button:hover{
     justify-content: space-between;
 }
 
-
-#canvas-container-sweden-1{
-    position: relative;
-    height: 50%;
-    width: 50%;
-}
-
 /* BACKGROUND */
+/* Styles teh text and the different elements on the index.HTML page*/
 .background{
     width: 100%;
     margin: auto;
     padding-top: 10px;
     padding-bottom: 80px;
-    /*background-image: linear-gradient(rgba(253, 134, 0, 0.20), rgba(253, 134, 0, 0.20));*/
 }
-
 
 .background-col{
     flex-basis: 48%;
@@ -386,56 +343,40 @@ button:hover{
     line-height: 1.5;
 }
 
-.background-col p{
-    padding-top: 0;
-    padding-left: 50px;
-    font-family: "Helvetica";
-    color: #333333;
-    line-height: 1.5;
-}
-
 .background-col img{
     width: 80%;
 }
 
-/* NORWAY */
-.bannerNorway{
+
+/* SWEDEN */
+/* This sections styles content that is specifif for the Sweden HTML page such as the banner and the styling of the differen text elements*/
+.bannerSwe{
     width: 100%;
     height:60vh;
     background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
-    url("../resources/norway.jpg");
+    url("../resources/sweden.jpg");
     background-size: cover;
     background-position: center;
+    
 }
-
-
-/*Conclusion */
-.buttonBox{
-    width:700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bannerConclusion{
-    width: 100%;
-    height:80vh;
-    background-image: linear-gradient(rgba(194, 47, 142, 0.10), rgba(253, 134, 0, 0.10)),    
-    url("../resources/conclusion2.jpg");
-    background-size: cover;
-    background-position: center;
-}
-.contentConclusion {
+.contentSwe{
     width: 100%;
     position: absolute;
-    top:40%;
+    top:30%;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
 }
-
-.contentConclusion h1{
+.contentSwe h1{
     font-size: 80px;
+}
+.contentSwe p{
+    margin:20px auto;
+    font-weight: 20;
+    line-height: 1.5;
+    font-size: 30px;
+    font-family: 'Helvetica';
+    color: #333333;
 }
 
 /*Button for sweden */
@@ -471,139 +412,6 @@ button:hover{
     border: none;
 }
 
-/*Button for Norway */
-#buttonNor{
-    width: 150px;
-    padding: 10px 0;
-    text-align: center;
-    margin: 15px 5px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid rgba(253, 134, 0, 0.8);
-    background: rgba(253, 134, 0, 0.6);
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-#buttonNor span{
-    background:rgba(253, 134, 0, 0.8);
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-#buttonNor:hover span{
-    width: 100%;
-}
-#buttonNor:hover{
-    border: none;
-}
-
-/*Button for denmark */
-#buttonDen {
-    width: 150px;
-    padding: 10px 0;
-    text-align: center;
-    margin: 15px 5px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid rgba(194, 47, 142, 0.8);
-    background: rgba(194, 47, 142, 0.6);
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-#buttonDen span{
-    background:rgba(194, 47, 142, 0.8);
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-#buttonDen:hover span{
-    width: 100%;
-}
-#buttonDen:hover{
-    border: none;
-}
-
-/*Button for Finland */
-#buttonFin{
-    width: 150px;
-    padding: 10px 0;
-    text-align: center;
-    margin: 15px 5px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid rgba(225, 71, 98, 0.8);
-    background: rgba(225, 71, 98, 0.6);
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-#buttonFin span{
-    background:rgba(225, 71, 98, 0.8);
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-#buttonFin:hover span{
-    width: 100%;
-}
-#buttonFin:hover{
-    border: none;
-}
-
-/*Button for Iceland */
-#buttonIce{
-    width: 150px;
-    padding: 10px 0;
-    text-align: center;
-    margin: 15px px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid rgba(129, 46, 124, 0.8);
-    background: rgba(129, 46, 124, 0.6);
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-#buttonIce span{
-    background:rgba(129, 46, 124, 0.8);
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-#buttonIce:hover span{
-    width: 100%;
-}
-#buttonIce:hover{
-    border: none;
-}
-
-
 /*Button for sweden LINECHART */
 #buttonSweLine{
     width: 150px;
@@ -634,6 +442,51 @@ button:hover{
     width: 100%;
 }
 #buttonSweLine:hover{
+    border: none;
+}
+
+
+
+/* NORWAY */
+.bannerNorway{
+    width: 100%;
+    height:60vh;
+    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
+    url("../resources/norway.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*Button for Norway */
+#buttonNor{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(253, 134, 0, 0.8);
+    background: rgba(253, 134, 0, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonNor span{
+    background:rgba(253, 134, 0, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonNor:hover span{
+    width: 100%;
+}
+#buttonNor:hover{
     border: none;
 }
 
@@ -670,7 +523,49 @@ button:hover{
     border: none;
 }
 
+/* DENMARK */
+.bannerDen{
+    width: 100%;
+    height:60vh;
+    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
+    url("../resources/denmark.jpg");
+    background-size: cover;
+    background-position: center;
+}
 /*Button for denmark */
+#buttonDen {
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(194, 47, 142, 0.8);
+    background: rgba(194, 47, 142, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonDen span{
+    background:rgba(194, 47, 142, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonDen:hover span{
+    width: 100%;
+}
+#buttonDen:hover{
+    border: none;
+}
+
+/*Button for denmark in teh combined linechart */
 #buttonDenLine {
     width: 150px;
     padding: 10px 0;
@@ -703,7 +598,51 @@ button:hover{
     border: none;
 }
 
+/* FINLAND */
+
+.bannerFin{
+    width: 100%;
+    height:60vh;
+    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
+    url("../resources/finland.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 /*Button for Finland */
+#buttonFin{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(225, 71, 98, 0.8);
+    background: rgba(225, 71, 98, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonFin span{
+    background:rgba(225, 71, 98, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonFin:hover span{
+    width: 100%;
+}
+#buttonFin:hover{
+    border: none;
+}
+
+/*Button for Finland for the combined linechart */
 #buttonFinLine{
     width: 150px;
     padding: 10px 0;
@@ -736,7 +675,52 @@ button:hover{
     border: none;
 }
 
+
+/* ICELAND */
+
+.bannerIce{
+    width: 100%;
+    height:60vh;
+    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
+    url("../resources/iceland2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 /*Button for Iceland */
+#buttonIce{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 15px px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(129, 46, 124, 0.8);
+    background: rgba(129, 46, 124, 0.6);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#buttonIce span{
+    background:rgba(129, 46, 124, 0.8);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#buttonIce:hover span{
+    width: 100%;
+}
+#buttonIce:hover{
+    border: none;
+}
+
+/*Button for Iceland for teh combined linechart */
 #buttonIceLine{
     width: 150px;
     padding: 10px 0;
@@ -769,59 +753,49 @@ button:hover{
     border: none;
 }
 
-/* BUTTON FOR HOME - READ MORE */
-#buttonBackground{
-    width: 200px;
-    padding: 15px 0;
+
+/*CONCLUSION */
+/*Styles the conclusion HTML page*/
+.buttonBox{
+    width:700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerConclusion{
+    width: 100%;
+    height:80vh;
+    background-image: linear-gradient(rgba(194, 47, 142, 0.10), rgba(253, 134, 0, 0.10)),    
+    url("../resources/conclusion2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.contentConclusion {
+    width: 100%;
+    position: absolute;
+    top:40%;
+    transform: translateY(-50%);
     text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid rgba(253, 181, 27, 0.8);
-    background:  rgba(253, 181, 27, 0.8);
     color: #fff;
-    cursor: pointer;
+}
+
+.contentConclusion h1{
+    font-size: 80px;
+}
+
+.col-chart-line-conclusion{
     position: relative;
-    overflow: hidden;
+    height: 60%;
+    width: 50%;
+    padding-right: 50px;
+    padding-top: 250px;
 }
 
-#buttonBackground a{
-    display: block;
-    text-decoration: none;
-    color:#fff;
-}
-
-
-
-/* DENMARK */
-
-.bannerDen{
-    width: 100%;
-    height:60vh;
-    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
-    url("../resources/denmark.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-/* FINLAND */
-
-.bannerFin{
-    width: 100%;
-    height:60vh;
-    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
-    url("../resources/finland.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-/* ICELAND */
-
-.bannerIce{
-    width: 100%;
-    height:60vh;
-    background-image: linear-gradient(rgba(105, 104, 105, 0.8), rgba(105, 104, 105, 0.8)),    
-    url("../resources/iceland2.jpg");
-    background-size: cover;
-    background-position: center;
+.col-chart-bar-conclusion{
+    position: relative;
+    height: 60%;
+    width: 50%;
+    padding-right: 50px;
+    padding-top: 250px;
 }

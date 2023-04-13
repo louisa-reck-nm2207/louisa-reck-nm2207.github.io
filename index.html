@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Title of the webpage -->
     <title>Louisa's data story</title>
+
+    <!-- Import Chart.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+    <!-- Link to my CSS file for styling the webpage -->
     <link rel="stylesheet" type="text/css" href="css/appstyle.css">
-    <script defer type="text/javascript" src="appscripts/main.js">
-        </script>
+
+    <!-- Defer the execution of my JavaScript file -->
+    <script defer type="text/javascript" src="appscripts/main.js"></script>
 </head>
+
+<!--HEADER-->
+<!-- A banner section containing a navigation bar and a content section -->
 <body>
     <div class="banner" id="banner">
+        <!-- Navigation bar -->
         <div class="navbar">
+            <!-- Logo image -->
             <img src="resources\logo.png" class="logo">
+
+            <!-- A unordered ist of links to different sections of the webpage -->
             <ul>
-                <!-- <li><a href="#">Home</a></li> This button will redirect the user to the top of the page while scrolling-->
-                <li><a href="#banner">Home</a></li> <!--This button will redirect the user to the background information while scrolling-->
-                 <!-- <li><a href="#">Countries</a></li> This button will redirect the user to the different countries pages while scrolling, I want to make this a drop-down menue-->
+                <li><a href="#banner">Home</a></li> 
+
+                <!-- A dropdown menu containing links to different country pages -->
                 <li class="dropdown">
                       <a>Countries</a>
                       <ul class="dropdown-menu">
@@ -25,33 +38,47 @@
                         <li><a href="iceland.html">Iceland</a></li>
                       </ul>
                 </li>
-                <li><a href="conclusion.html">Conclusion</a></li> <!--This button will redirect the user to the conclusion while scrolling-->
-                <li><a href="#footer">About</a></li> <!--This button will redirect the user to the project documentation-->
+                <!-- A link to the conclusion section of the webpage -->
+                <li><a href="conclusion.html">Conclusion</a></li> 
+                <!-- A link to the about section of the webpage -->
+                <li><a href="#footer">About</a></li>
             </ul>
         </div>
 
+        <!-- The content section of the banner -->
         <div class="content">
+            <!-- Heading of the webpage -->
             <h1>Happiness.</h1>
-            <p>What is the trend of happiness scores in 5 Nordic countries in Europe over the last decade?<br>I WILL UPDATE THIS QUESTION </p>
+            <p>How has the happiness score of the five Nordic countries Sweden, Norway, Denmark, Finland, and Iceland <br> 
+                changed over the last decade, and what factors have contributed to these changes?
+            </p>
             <div>
-                <button type="button"><a href="#footer"><span></span>DOCUMENTATION</a></button>   <!--If you press this button you get directed to "Background"-->
-                <button type="button"><a href="#footer"><span></span>SOURCES</a></button>     <!--If you press this button you get directed to the bottom of the page where I will write the sources I used etc.-->
+                <!-- Buttons linking to documentation and sources -->
+                <button type="button"><a href="writeup.html"><span></span>DOCUMENTATION</a></button>   
+                <button type="button"><a href="diary.html"><span></span>DIARY</a></button>     
             </div>
         </div>
-        <!--Design and code: followed this youtube tutorial: https://www.youtube.com/watch?v=PgAZ8KzfhO8-->
+        <!-- End of the banner section -->
+
+        <!--For this design and code, I followed this youtube tutorial and modified it a bit to fit my website: https://www.youtube.com/watch?v=PgAZ8KzfhO8-->
         
     </div>
     
     <!--BACKGROUND INFORMATION-->
+    <!-- A section containing background information on the World Happiness Report and the Nordic countries -->
     <section class="background" id="background">
         <div class="row">
             <div class="background-col">
+                <!-- Subheading -->
                 <h1>The World Happiness Report</h1><br>
+
+                <!-- Paragraphs containing information about the report and the Nordic countries -->
                 <p> The World Happiness Report is an annual survey conducted by the United Nations that ranks countries based on a variety 
                     of factors that influence happiness and well-being. These factors are GDP per capita, social support, helathy life expectancy, 
                     freedom to make life choices, generosity and freedom from corruption.The report offers useful insights into the quality of life 
                     in various countries and can help policymakers and researchers identify the factors that contribute to happiness.
                 </p><br>
+
                 <p>Some countries that consistently rank high in the report are the northern European countries Sweden, Norway, Denmark,
                     Finland and Iceland. Because of their high happiness scores and shared characteristics, such as strong social welfare
                     systems, gender equality, high levels of trust in public institutions, and a focus on environmental sustainability, 
@@ -59,19 +86,24 @@
                     the policies and practices contributing to happiness. Furthermore, we can apply these insights to other countries to help
                     improve the global quality of life. 
                 </p><br>
+
                 <div class="buttonBox">
-                    <button type="button" id="buttonBackground"><a href="#banner">READ MORE</a></button> <!--If you click this button you get the happines score line chart for sweden-->
+                    <!-- This is a button that links to the top of the website -->
+                    <button type="button" id="buttonBackground"><a href="#banner">READ MORE</a></button> 
                 </div>
             </div>
             <div class="background-col">
+                <!-- An image of the Happiness Report -->
                 <img src="resources\whr2.jpg">
             </div>
 
         </div>
     </section>
-    
 
+ <!-- FOOTER -->
+<!-- This is the code for the footer of my web page -->
     <div class="footer" id="footer">
+        <!-- This is the first column of the footer, containing different links to sources -->
         <div class="col-1">
             <h3>SOURCES</h3>
             <a href="https://worldhappiness.report/ed/2022/">World Happiness Report 2022</a>
@@ -79,13 +111,15 @@
             <a href="https://chat.openai.com/">ChatGPT</a>
         </div>
 
+        <!-- This is the second column of the footer, containing links to some of teh project documentation -->
         <div class="col-2">
             <h3>ABOUT</h3>
-            <a href="#">Project Report</a>
+            <a href="writeup.html">Project Report</a>
             <a href="diary.html">Diary entries</a>
-            <a href="#">Storyboard</a>
+            <a href="storyboard.html">Storyboard</a>
         </div>
-            
+
+         <!-- This is the third column of the footer, containing my contact information and the Github repository-->
         <div class="col-3">
             <h3>CONTACT</h3>
             <p> Louisa Reck </p><br>
@@ -94,6 +128,8 @@
             <a href="https://github.com/louisa-reck-nm2207/louisa-reck-nm2207.github.io">Github repository</a>
         </div>
     </div>
+
+     <!--For the design and code, I followed this youtube tutorial and modified it a bit to fit my website: https://www.youtube.com/watch?v=lLdzlLL33G8-->
 
 </body>
 </html>

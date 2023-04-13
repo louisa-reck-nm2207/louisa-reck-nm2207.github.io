@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Title of the webpage -->
     <title>Louisa's data story</title>
+
+    <!-- Import Chart.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+    <!-- Link to my CSS file for styling the webpage -->
     <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+
+    <!-- Defer the execution of my JavaScript file -->
     <script defer type="text/javascript" src="appscripts/main.js"></script>
 </head>
+
+<!--HEADER-->
+<!-- A banner section containing a navigation bar and a content section -->
 <body>
     <div class="bannerConclusion">
+        <!-- Navigation bar -->
         <div class="navbar">
-            <img src="C:\Users\louis\Desktop\NM2207\web\finalProject\resources\logo.png" class="logo">
+            <!-- Logo image -->
+            <img src="resources\logo.png" class="logo">
+
+            <!-- A unordered ist of links to different sections of the webpage -->
             <ul>
-                <li><a href="index.html">home</a></li> <!--This button will redirect the user to the home page -->
-                 <!-- This button will redirect the user to the different countries pages while scrolling, I want to make this a drop-down menue-->
+                <li><a href="index.html">home</a></li> 
+                
+                <!-- A dropdown menu containing links to different country pages -->
                 <li class="dropdown">
                       <a>Countries</a>
                       <ul class="dropdown-menu">
@@ -23,11 +38,14 @@
                         <li><a href="iceland.html">Iceland</a></li>
                       </ul>
                 </li>
-                <li><a href="conclusion.html">Conclusion</a></li> <!--This button will redirect the user to the conclusion-page-->
-                <li><a href="#footer">About</a></li> <!--This button will redirect the user to the project documentation-->
+                <!-- A link to the conclusion section of the webpage -->
+                <li><a href="conclusion.html">Conclusion</a></li> 
+                <!-- A link to the about section of the webpage -->
+                <li><a href="#footer">About</a></li>
             </ul>
         </div>
-
+        
+        <!-- Heading of the webpage -->
         <div class="contentConclusion">
             <h1>CONCLUSION</h1><br>
         </div>
@@ -35,22 +53,28 @@
 
     <!--Design and code: followed this youtube tutorial: https://www.youtube.com/watch?v=PgAZ8KzfhO8-->
 
- 
+ <!-- This section shows a comparison of happiness factors among Nordic countries in 2022 -->
     <section class="country">
         <div class="row">
             <div class="country-col">
-                <h1>World Happiness Report 2022</h1><br>
-                <p> According to the World Happiness Report 2022, Sweden ranked sixth in the world in terms of happiness with a score of 74 out of 100. Nevertheless, the country received a relatively low score for the generosity factor compared to other countries. This does not necessarily mean that Swedes are not generous, but rather that the generosity measure used in the report is based on charitable donations and volunteering, which may not reflect the full extent of generosity in Swedish society.<br>
+                <h1>Comparing the Factors of Happiness Score Among Nordic Countries in 2022</h1><br>
+                <p>
+                    When it comes to happiness, the Nordic countries seem to have figured it out. The happiness score of Sweden, 
+                    Norway, Denmark, Finland, and Iceland for 2022 is strikingly similar. They all have a high GDP per capita, but 
+                    Norway takes the lead in this category. Social support is also vital, with Iceland scoring the highest and all 
+                    five countries scoring similarly. Healthy life expectancy and freedom to make life choices are also important, as 
+                    these countries all have similar scores in these categories. Surprisingly, generosity is not a significant factor in 
+                    happiness, with low scores across the cart. Even though Iceland scored the highest, Finland takes the top spot as the world's 
+                    happiest country for 2022. Another intriguing category is freedom from corruption, where the scores vary widely among the five countries. 
+                    Iceland has the lowest score, despite ranking third in overall happiness.<br><br>
+                    To sum it up, all six factors in the Happiness report are essential, but a high GDP per capita, social support, healthy life expectancy, 
+                    and freedom to make life choices seem to be the most crucial factors in happiness. Generosity and freedom from corruption are also significant 
+                    but have less impact on overall happiness scores.
 
-                    Sweden has a well-developed welfare state and a high level of taxation, which means that many social needs are already met by the government. As a result, there may be less of a cultural tradition of private charitable donations compared to other countries with weaker social safety nets.<br>
-                    
-                    Furthermore, the COVID-19 pandemic may have had an impact on the generosity score for Sweden and other countries. With social distancing measures in place, there may have been fewer opportunities for volunteering and charitable donations. Additionally, the economic impact of the pandemic may have made it more difficult for people to donate money.<br>
-                    
-                    It's also worth noting that while Sweden may have received a lower score for generosity, it received high scores in other factors that contribute to overall happiness, such as social support, work-life balance, and a sense of purpose.
-                   
                 </p>
             </div>
-            <div class="col-chart-bar">
+            <div class="col-chart-bar-conclusion">
+                <!-- Buttons toggle visibility of the different countries -->
                 <div class="buttonBox">
                     <button type="button" id="buttonSwe"><span></span>SWEDEN</button>
                     <button type="button" id="buttonNor"><span></span>NORWAY</button>
@@ -58,22 +82,34 @@
                     <button type="button" id="buttonFin"><span></span>FINLAND</button>
                     <button type="button" id="buttonIce"><span></span>ICELAND</button>
                 </div>
+                <!-- Bar chart displaying happiness scores -->
                 <canvas id="conclusionChartBar"></canvas>
             </div>
         </div>
     </section>
 
+
+    <!-- This section shows a comparison of the happiness scores of Nordic countries over the past decade -->
     <section class="country">
         <div class="row">
             <div class="country-col">
-                <h1>Sweden: A Happy Country</h1><br>
-                <p>If we look at the World Happiness Scores of Sweden between the years 2012 and 2021, we can see that Sweden's happiness score has been consistently high throughout this period. In 2012, Sweden's happiness score was 75.6 which is the highest score during this decade. The score has ranged between 72.4 and 75.6. This indicates that Sweden has been successful in maintaining a high level of happiness and well-being among its citizens, despite the challenges posed by events such as the COVID-19 pandemic.<br>
-
-                    Sweden's high ranking can be attributed to several factors. The country has a strong social welfare system, which provides its citizens with access to high-quality healthcare, education, and other public services. Sweden also values work-life balance, with a focus on shorter work weeks, parental leave, and flexible working arrangements.<br>
-                    
-                    Additionally, Sweden has a high level of trust in society, both between individuals and in institutions. This trust is fostered by low levels of corruption and a commitment to social cohesion. Sweden is also known for its emphasis on sustainability, innovation, and design, which contribute to a sense of well-being among its citizens..</p>
+                <h1>A Decade of Nordic Happiness: Insights from the Happiness Report</h1><br>
+                <p>
+                    The Happiness Report is a fascinating glimpse into the well-being of people around the world. The chart on the right 
+                    reveals the happiness scores of five Nordic countries over the past decade. Denmark appears to have been the happiest 
+                    country of the five at the beginning of the period, but Norway had a significant jump in score in 2015, while the score 
+                    for Iceland was unfortunately missing for 2015. However, from 2016 to 2022, Finland emerged as the clear winner, with a 
+                    much higher happiness score than the other countries. Denmark maintained a relatively high happiness score during this period, 
+                    while Norway and Sweden lagged slightly behind.<br><br>
+                    It is noteworthy that the happiness score for Sweden and Norway decreased somewhat over the last decade, while Iceland's score 
+                    slightly increased. However, Denmark's happiness score remained steady, suggesting a consistent level of well-being in the country. 
+                    Finally, it is exciting to see Finland's happiness score rise dramatically, making it the happiest country in the world according to the 
+                    latest report. This upward trend aligns with the country's emphasis on social welfare and income security, among other factors. Overall, 
+                    the Happiness Report and the charts provide valuable insights into the factors that contribute to a happy life.
+                </p>
             </div>
-            <div class="col-chart-line">
+            <div class="col-chart-line-conclusion">
+                <!-- Buttons toggle visibility of the different countries -->
                 <div class="buttonBox">
                     <button type="button" id="buttonSweLine"><span></span>SWEDEN</button>
                     <button type="button" id="buttonNorLine"><span></span>NORWAY</button>
@@ -81,35 +117,43 @@
                     <button type="button" id="buttonFinLine"><span></span>FINLAND</button>
                     <button type="button" id="buttonIceLine"><span></span>ICELAND</button>
                 </div>
+                <!-- Line chart displaying the happiness scores -->
                 <canvas id="conclusionChartLine"></canvas>
             </div>
 
         </div>
     </section>
     
-    <div class="footer" id="footer">
-        <div class="col-1">
-            <h3>SOURCES</h3>
-            <a href="https://worldhappiness.report/ed/2022/">World Happiness Report 2022</a>
-            <a href="https://www.gapminder.org/data/">Gapminder</a>
-            <a href="https://chat.openai.com/">ChatGPT</a>
-        </div>
-
-        <div class="col-2">
-            <h3>ABOUT</h3>
-            <a href="#">Project Report</a>
-            <a href="diary.html">Diary entries</a>
-            <a href="#">Storyboard</a>
-        </div>
-            
-        <div class="col-3">
-            <h3>CONTACT</h3>
-            <p> Louisa Reck </p><br>
-            <p>National University of Singapore</p><br>
-            <p>NM2207 - Computational Media Literacy</p><br>
-            <a href="https://github.com/louisa-reck-nm2207/louisa-reck-nm2207.github.io">Github repository</a>
-        </div>
+<!-- FOOTER -->
+<!-- This is the code for the footer of my web page -->
+<div class="footer" id="footer">
+    <!-- This is the first column of the footer, containing different links to sources -->
+    <div class="col-1">
+        <h3>SOURCES</h3>
+        <a href="https://worldhappiness.report/ed/2022/">World Happiness Report 2022</a>
+        <a href="https://www.gapminder.org/data/">Gapminder</a>
+        <a href="https://chat.openai.com/">ChatGPT</a>
     </div>
+
+    <!-- This is the second column of the footer, containing links to some of teh project documentation -->
+    <div class="col-2">
+        <h3>ABOUT</h3>
+        <a href="writeup.html">Project Report</a>
+        <a href="diary.html">Diary entries</a>
+        <a href="storyboard.html">Storyboard</a>
+    </div>
+
+     <!-- This is the third column of the footer, containing my contact information and the Github repository-->
+    <div class="col-3">
+        <h3>CONTACT</h3>
+        <p> Louisa Reck </p><br>
+        <p>National University of Singapore</p><br>
+        <p>NM2207 - Computational Media Literacy</p><br>
+        <a href="https://github.com/louisa-reck-nm2207/louisa-reck-nm2207.github.io">Github repository</a>
+    </div>
+</div>
+<!--For the design and code, I followed this youtube tutorial and modified it a bit to fit my website: https://www.youtube.com/watch?v=lLdzlLL33G8-->
 
 </body>
 </html>
+
